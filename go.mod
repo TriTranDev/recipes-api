@@ -2,4 +2,7 @@ module recipes-api
 
 go 1.16
 
-require github.com/gin-gonic/gin v1.7.3 // indirect
+require (
+	github.com/gin-gonic/gin v1.7.3 // indirect
+	github.com/rs/xid v1.3.0 // indirect
+)
