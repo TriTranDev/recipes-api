@@ -1,0 +1,72 @@
+{
+  "swagger": "2.0",
+  "info": {},
+  "paths": {
+    "/recipes": {
+      "get": {
+        "description": "Successful operation",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "recipes"
+        ],
+        "operationId": "listRecipes"
+      },
+      "post": {
+        "description": "Error parse object",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "recipe"
+        ],
+        "operationId": "newRecipe"
+      }
+    },
+    "/recipes/search": {
+      "get": {
+        "description": "list recipes",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "recipes"
+        ],
+        "operationId": "searchRecipe"
+      }
+    },
+    "/recipes/{id}": {
+      "put": {
+        "description": "Invalid recipe ID",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "recipes"
+        ],
+        "operationId": "updateRecipe",
+        "parameters": [
+          {
+            "name": "id"
+          }
+        ]
+      },
+      "delete": {
+        "description": "Recipe not found",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "recipes"
+        ],
+        "operationId": "deleteRecipe",
+        "parameters": [
+          {
+            "name": "id"
+          }
+        ]
+      }
+    }
+  }
+}
